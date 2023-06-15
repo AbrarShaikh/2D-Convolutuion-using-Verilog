@@ -33,5 +33,6 @@ INTR signal continues to get triggered whenever the IP requires a new row. This 
 
 ## REFERENCES
 [1]	Towardsdatascience.com/intuitively-understanding-convolutions-for-deep-learning.
+
 [2]	J Roger Woods, “ FPGA-based Implementation of Signal Processing Systems”, WILEY, ISBN 9781119077954.
 
