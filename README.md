@@ -15,12 +15,14 @@ Pure streaming architecture can’t be used for convolution operation since imag
 
 ### MAC opperation
 AC stands for multiply accumulate. So, in this particular module corresponding elements of two matrices which are the kernel and input image matrix are multiplied and then added . Hence the kernel is strided onto the whole image matrix and in each stride MAC operation is performed. The kernel which is to be strided depends on the application. Various kernels are available for different applications like image blurring, edge detection etc. Higher order filters tend to extract out more features rather than lower order filters.
+
 ![image](https://github.com/AbrarShaikh/2D-Convolutuion-using-Verilog/assets/34272376/b158fc14-9140-4d07-bc99-811fafe4de4f)
 
 ### Controller FSM
 Three line buffers are placed in parallel to scan input image, so that it can be streamed to perform MAC operation for first iteration. The last buffer is used to next image line for next iteration, which reduces the latency of fetching.
 On the other hand, the picture may be partitioned with several filters working concurrently if sufficient resources and memory bandwidth exist. It can be more efficient to simultaneously analyse many neighbouring lines, instead of partitioning the image.
 If the scan loop is partially unrolling vertically, pixel reading from k picture rows is required. These pixels, however, are not often saved in memory with an embarrassing pattern of memory access. It is more likely that pixels are packed in memory, such that several horizontals may be read. At the same time, pixels. The horizontal partial unrolling of the scan loop.
+
 ![image](https://github.com/AbrarShaikh/2D-Convolutuion-using-Verilog/assets/34272376/4e4d1cbf-b3ce-4dfb-839e-06e35e56d5cd)
 
 ## SIMULATION
