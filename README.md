@@ -14,7 +14,7 @@ Pure streaming architecture can’t be used for convolution operation since imag
 ![image](https://github.com/AbrarShaikh/2D-Convolutuion-using-Verilog/assets/34272376/e1d5a679-57b3-451a-95b0-73c14686dede)
 
 ### MAC opperation
-AC stands for multiply accumulate. So, in this particular module corresponding elements of two matrices which are the kernel and input image matrix are multiplied and then added . Hence the kernel is strided onto the whole image matrix and in each stride MAC operation is performed. The kernel which is to be strided depends on the application. Various kernels are available for different applications like image blurring, edge detection etc. Higher order filters tend to extract out more features rather than lower order filters.
+MAC stands for multiply accumulate. So, in this particular module corresponding elements of two matrices which are the kernel and input image matrix are multiplied and then added . Hence the kernel is strided onto the whole image matrix and in each stride MAC operation is performed. The kernel which is to be strided depends on the application. Various kernels are available for different applications like image blurring, edge detection etc. Higher order filters tend to extract out more features rather than lower order filters.
 
 ![image](https://github.com/AbrarShaikh/2D-Convolutuion-using-Verilog/assets/34272376/b158fc14-9140-4d07-bc99-811fafe4de4f)
 
